@@ -1,0 +1,161 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    word-break: keep-all;
+    outline: 1px solid skyblue;    
+}
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.right {
+    display: flex;
+    margin-right: 30px;
+}
+header .right span {
+    font-size: 15px;
+}
+.menu {
+    width: 30px;
+    height: 30px;
+    background: url(/casetify/images/menu.png) 50% 50% no-repeat;
+    background-size: cover;
+    text-indent: -9000px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.logo {
+    width: 162px;
+    height: 49px;
+    background: url(/casetify/images/logo.png) 50% 50% no-repeat;
+    background-size: cover;
+    text-indent: -9000px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .right > span a {
+    cursor: pointer;
+}
+header .right > span a:first-child::after {
+    display: inline-block;
+    background: #000;
+    content: "";
+    width: 1px;
+    height: 20px;
+    margin: 0 15px;
+}
+.search {
+    width: 30px;
+    height: 30px;
+    background: url(/casetify/images/search.png) 50% 50% no-repeat;
+    background-size: cover;
+    text-indent: -9000px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.cart {
+    width: 30px;
+    height: 30px;
+    background: url(/casetify/images/cart.png) 50% 50% no-repeat;
+    background-size: cover;
+    text-indent: -9000px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.sec01 {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    background: #F7F7F7;
+    text-align: center;
+}
+.sec02 {
+    width: 100%;
+    height: 954px;
+}
+.inner1500 {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.titleimg {
+    content: "";
+    width: 456px;
+    height: 228px;
+    background: url(/casetify/images/showyourcolors.png);
+    position: absolute;
+    top: 47px;
+    left: 0;
+}
+.case {
+    width: 456px;
+    height: 640px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: 314px;
+    left: 0px;
+}
+.rec01 {
+    width: 579px;
+    height: 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 38px;
+    right: 113px;
+}
+.rec01 > p {
+    font-size: 20px;
+}
+.rec01 > h3 {
+    font-size: 40px;
+}
+.rec01 > p::before {
+    display: inline-block;
+    content: "";
+    width: 579px;
+    height: 3px;
+    background: #000;
+    margin: 0;
+}
+.rec02 {
+    position: absolute;
+    width: 97px;
+    height: 332px;
+    top: 14px;
+    right: 46px;
+    border: 1px solid #000;
+}
+.rec03 {
+    position: absolute;
+    width: 113px;
+    height: 322px;
+    top: 0px;
+    right: 0px;
+    background: url(/casetify/images/mainRectangle.png) no-repeat;
+}
+
