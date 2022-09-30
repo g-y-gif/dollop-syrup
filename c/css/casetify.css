@@ -34,7 +34,7 @@ header .right span {
 .menu {
     width: 30px;
     height: 30px;
-    background: url(/casetify/images/menu.png) 50% 50% no-repeat;
+    background: url(/images/menu.png) 50% 50% no-repeat;
     background-size: cover;
     text-indent: -9000px;
     cursor: pointer;
@@ -43,7 +43,7 @@ header .right span {
 .logo {
     width: 162px;
     height: 49px;
-    background: url(/casetify/images/logo.png) 50% 50% no-repeat;
+    background: url(/images/logo.png) 50% 50% no-repeat;
     background-size: cover;
     text-indent: -9000px;
     cursor: pointer;
@@ -67,7 +67,7 @@ header .right > span a:first-child::after {
 .search {
     width: 30px;
     height: 30px;
-    background: url(/casetify/images/search.png) 50% 50% no-repeat;
+    background: url(/images/search.png) 50% 50% no-repeat;
     background-size: cover;
     text-indent: -9000px;
     cursor: pointer;
@@ -76,7 +76,7 @@ header .right > span a:first-child::after {
 .cart {
     width: 30px;
     height: 30px;
-    background: url(/casetify/images/cart.png) 50% 50% no-repeat;
+    background: url(/images/cart.png) 50% 50% no-repeat;
     background-size: cover;
     text-indent: -9000px;
     cursor: pointer;
@@ -104,7 +104,7 @@ header .right > span a:first-child::after {
     content: "";
     width: 456px;
     height: 228px;
-    background: url(/casetify/images/showyourcolors.png);
+    background: url(/images/showyourcolors.png);
     position: absolute;
     top: 47px;
     left: 0;
@@ -156,6 +156,6 @@ header .right > span a:first-child::after {
     height: 322px;
     top: 0px;
     right: 0px;
-    background: url(/casetify/images/mainRectangle.png) no-repeat;
+    background: url(/images/mainRectangle.png) no-repeat;
 }
 
