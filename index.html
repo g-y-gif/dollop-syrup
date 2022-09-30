@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>표</title>
+    <style>
+       table { 
+            width: 400px;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px solid #000;
+        }
+        
+        .c1 {background: cornflowerblue;}
+        .c2 {background: greenyellow;}
+        table:nth-child(2) th {background: pink;}
+
+        .practice {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .c4 {background: yellow;}
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>교과목</th>
+                <th>점수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>HTML</th>
+                <td>93</td>
+            </tr>
+        </tbody>
+            <tr>
+                <th>CSS</th>
+                <td>92</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <th>평균</th>
+                <td>92.5</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>교과목</th>
+                <th>점수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>HTML</th>
+                <td>93</td>
+            </tr>
+        </tbody>
+            <tr>
+                <th>CSS</th>
+                <td>92</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <th>평균</th>
+                <td>92.5</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <colgroup>
+            <col class="c1">
+            <col class="c2">
+        </colgroup>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <th>9</th>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td colspan="3">4</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>1</td>
+            <td rowspan="2">2</td>                   
+        </tr>
+        <tr>
+            <td>4</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table class="practice">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col class="c4">
+            <col>
+        </colgroup>
+        <tr>
+            <td colspan="2">1</td>
+            <td>3</td>
+            <td>4</td>
+            <td rowspan="2">5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td rowspan="2" colspan="2">7</td>            
+            <td>9</td>            
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td rowspan="2">16</td>
+            <td colspan="2">17</td>            
+            <td rowspan="3">19</td>
+            <td>20</td>
+        </tr>
+        <tr>            
+            <td>22</td>
+            <td>23</td>                      
+            <td>25</td>
+        </tr>
+        <tr>
+            <td colspan="2">26</td>            
+            <td>28</td>                       
+            <td rowspan="2">30</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td colspan="2">32</td>            
+            <td>34</td>            
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table>
+        <caption>상품에 따른 상하반기 판매량</caption>
+        <thead>
+            <tr>
+                <th scope="col">구분</th>
+                <th scope="col">데스크탑 PC</th>
+                <th scope="col">스마트폰</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">상반기 판매수</th>
+                <td>2만대</td>
+                <td>5만대</td>
+            </tr>
+            <tr>
+                <th scope="row">하반기 판매수</th>
+                <td>3만대</td>
+                <td>7만대</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
