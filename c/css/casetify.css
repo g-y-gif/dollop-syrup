@@ -95,7 +95,7 @@ header .right > span a:first-child::after {
     height: 924px;
 }
 .inner {
-    width: 14400px;
+    width: 1440px;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -187,22 +187,22 @@ header .right > span a:first-child::after {
     border-radius: 50%;
 }
 .c00 {
-    background: url(/c/images/circle0.png) 50% 50% no-repeat; 
+    background: url(/dollop-syrup/c/images/circle1.png) 50% 50% no-repeat; 
 }
 .c01 {
-    background: url(/c/images/circle1.png) 50% 50% no-repeat;
+    background: url(/dollop-syrup/c/images/circle2.png) 50% 50% no-repeat;
 }
 .c02 {
-    background: url(/c/images/circle2.png) 50% 50% no-repeat;
+    background: url(/dollop-syrup/c/images/circle3.png) 50% 50% no-repeat;
 }
 .c03 {
-    background: url(/c/images/circle3.png) 50% 50% no-repeat;
+    background: url(/dollop-syrup/c/images/circle4.png) 50% 50% no-repeat;
 }
 .c04 {
-    background: url(/c/images/circle4.png) 50% 50% no-repeat;
+    background: url(/dollop-syrup/c/images/circle5.png) 50% 50% no-repeat;
 }
 .c05 {
-    background: url(/c/images/circle5.png) 50% 50% no-repeat;
+    background: url(/dollop-syrup/c/images/circle0.png) 50% 50% no-repeat;
 }
 
 .titletext {
