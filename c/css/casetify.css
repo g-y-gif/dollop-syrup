@@ -268,9 +268,9 @@ header .right > span a:first-child::after {
 
 .sec03 {
     width: 100%;
-    height: 3000px;
+    height: 1185px;
     background-image:  url(/dollop-syrup/c/images/logoCo_Lab.png), url(/dollop-syrup/c/images/background.png);
-    background-position: 96% 1.5%, top center;
+    background-position: 96% 3%, top center;
     background-repeat:no-repeat;
 }
 
@@ -304,8 +304,8 @@ header .right > span a:first-child::after {
 }
 
 .coLab {
-    width: 220px;
-    height: 380px;
+    width: 202px;
+    height: 349px;
     border-radius: 30px;
 }
 .w01 {
@@ -313,19 +313,41 @@ header .right > span a:first-child::after {
     position: absolute;
     top: 206px;
     left: 0;
-    box-shadow: -17px 17px 0px 7px #F28080;
+    box-shadow: -13px 13px 0px 4px #F28080;
 }
 .w02 {
     background: url(/dollop-syrup/c/images/Co-Lab02.png);
     position: absolute;
-    top: 298px;
-    left: 346px;
-    box-shadow: -17px 17px 0px 7px #F23838;
+    top: 290px;
+    left: 340px;
+    box-shadow: -13px 13px 0px 4px #F23838;
 }
 .w03 {
     background: url(/dollop-syrup/c/images/Co-Lab03.png);
     position: absolute;
-    top: 416px;
-    left: 673px;
-    box-shadow: -17px 17px 0px 7px #F27C38;
+    top: 399px;
+    left: 681px;
+    box-shadow: -13px 13px 0px 4px #F27C38;
+}
+.w04 {
+    background: url(/dollop-syrup/c/images/Co-Lab04.png);
+    position: absolute;
+    top: 693px;
+    left: 56px;
+    box-shadow: -13px 13px 0px 4px #F2DA63;
+}
+.w05 {
+    background: url(/dollop-syrup/c/images/Co-Lab05.png);
+    position: absolute;
+    top: 778px;
+    left: 396px;
+    box-shadow: -13px 13px 0px 4px #428C37;
+}
+
+.sec04 {
+    width: 100%;
+    height: 1040px;
+    background-image: url(/dollop-syrup/c/images/background2.png), url(/dollop-syrup/c/images/background3.png);
+    background-position: top center;
+    background-repeat: no-repeat;
 }
