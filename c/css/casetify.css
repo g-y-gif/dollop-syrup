@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* google fonts */
 @import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap);
+/* animate css v4.1.1 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css');
 * {
     margin: 0;
     padding: 0;
@@ -307,6 +309,7 @@ header .right > span a:first-child::after {
     width: 202px;
     height: 349px;
     border-radius: 30px;
+    display: inline-block;
 }
 .w01 {
     background: url(/dollop-syrup/c/images/Co-Lab01.png);
@@ -347,7 +350,22 @@ header .right > span a:first-child::after {
 .sec04 {
     width: 100%;
     height: 1040px;
-    background-image: url(/dollop-syrup/c/images/background2.png), url(/dollop-syrup/c/images/background3.png);
+    background-image: url(/dollop-syrup/c/images/background2-1.png), url(/dollop-syrup/c/images/background3.png);
     background-position: top center;
     background-repeat: no-repeat;
+    overflow: hidden;
+    animation-name: dropwater;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
 }
+/* @keyframes dropwater {
+    from {
+        transform:scale();
+    }
+    to {
+        transform: scale();
+    }
+} */
