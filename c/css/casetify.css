@@ -111,14 +111,14 @@ header .right > span a:first-child::after {
     top: 32px;
     left: 0;
 }
-.case {
+#case {
     width: 385px;
     height: 610px;
-    display: flex;
     overflow: hidden;
     position: absolute;
     top: 314px;
     left: 0px;
+    display: none;
 }
 .rec01 {
     width: 579px;
@@ -168,7 +168,7 @@ header .right > span a:first-child::after {
     font-size: 30px;
 }
 
-.tabPreview {
+#tabPreview {
     width: 390px;
     height: 286px;
     display: flex;
