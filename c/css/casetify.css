@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
     font-family: 'Noto Sans KR', sans-serif;
     word-break: keep-all;
     /* outline: 1px solid skyblue;     */
@@ -24,6 +25,8 @@ header {
     position: sticky;
     top: 0;
     left: 0;
+    background: #fff;
+    z-index: 10000;
 }
 .right {
     display: flex;
@@ -118,6 +121,8 @@ header .right > span a:first-child::after {
     position: absolute;
     top: 314px;
     left: 0px;
+}
+#case > div {
     display: none;
 }
 .rec01 {
@@ -224,22 +229,22 @@ header .right > span a:first-child::after {
 }
         
 .c00 {
-    background: url(/dollop-syrup/c/images/circle1.png) 50% 50% no-repeat; 
+    background: url(/dollop-syrup/c/images/circle00.png) 50% 50% no-repeat; 
 }
 .c01 {
-    background: url(/dollop-syrup/c/images/circle2.png) 50% 50% no-repeat;
+    background: url(/dollop-syrup/c/images/circle01.png) 50% 50% no-repeat;
 }
 .c02 {
-    background: url(/dollop-syrup/c/images/circle3.png) 50% 50% no-repeat;
+    background: url(/dollop-syrup/c/images/circle02.png) 50% 50% no-repeat;
 }
 .c03 {
-    background: url(/dollop-syrup/c/images/circle4.png) 50% 50% no-repeat;
+    background: url(/dollop-syrup/c/images/circle03.png) 50% 50% no-repeat;
 }
 .c04 {
-    background: url(/dollop-syrup/c/images/circle5.png) 50% 50% no-repeat;
+    background: url(/dollop-syrup/c/images/circle04.png) 50% 50% no-repeat;
 }
 .c05 {
-    background: url(/dollop-syrup/c/images/circle0.png) 50% 50% no-repeat;
+    background: url(/dollop-syrup/c/images/circle05.png) 50% 50% no-repeat;
 }
 
 .titletext {
@@ -363,9 +368,16 @@ footer {
 footer h4 {
     font-size: 15px;
 }
+.fBox01 {
+    display: flex;
+    height: 240px;
+    gap: 60px;
+    margin: 0 auto;
+}
 .fRight a {
     font-size: 13px;
     color: #fff;
+    margin: 10px;
 }
 footer:first-child {
     height: 530px;
@@ -385,6 +397,16 @@ footer .inner1200 {
 }
 .fLeft h4:first-child {
     margin: 0 0 18px 0;
+}
+.fRight {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 240px;
+    justify-content: space-between;
+}
+.fRight ul {
+    margin: 0 auto;
 }
 .mailbox {
     display: flex;
@@ -407,6 +429,7 @@ footer .inner1200 {
     text-align: center;
     line-height: 38px;
     font-size: 13px;
+    cursor: pointer;
 }
 .fBox03 > p {
     color: #606060;
