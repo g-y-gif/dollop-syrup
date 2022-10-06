@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* google fonts */
-@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+/* font awsome cdn */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
 
 * {
     margin: 0;
@@ -380,7 +382,13 @@ footer h4 {
     margin: 10px;
 }
 footer:first-child {
-    height: 530px;
+    height: 630px;
+}
+footer:first-of-type .inner1200 {
+    padding: 45px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 footer:last-child {
     height: 100px;
@@ -389,14 +397,30 @@ footer .inner1200 {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
-    padding: 45px 0 0 0;
 }
+
 .fLeft {
     display: flex;
     flex-direction: column;
 }
 .fLeft h4:first-child {
     margin: 0 0 18px 0;
+}
+.sns .snsBox {
+    display: flex;
+}
+.sns a {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 12px 0 0;
+}
+.sns .icon {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
 }
 .fRight {
     display: flex;
@@ -432,7 +456,42 @@ footer .inner1200 {
     cursor: pointer;
 }
 .fBox03 > p {
+    text-align: center;
     color: #606060;
     font-size: 12px;
 }
-
+.fBox02 {
+    text-align: center;
+}
+.fBox02 p > span {
+    font-size: 20px;
+    color: #73CF11;
+    text-align: center;
+}
+.fBox02 p > span:last-of-type {
+    color: #DCDCE6;
+}
+.fBox02 p a > span {
+    color: #00B67A;
+}
+.fBox02 p a {
+    color: #fff;
+}
+footer:last-of-type .inner1200 {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #fff;
+    padding: 20px 0;
+}
+footer .inner1200 .left2 {
+    display: flex;
+    gap: 13px; 
+}
+footer .inner1200 .left2 p:nth-of-type(2) a {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    padding: 0 13px;
+}
+footer .inner1200 .left2 a {
+    color: #fff;
+}
