@@ -289,11 +289,13 @@ header .right > span a:first-child::after {
 }
 .sec03 .txtBox h3 {
     font-size: 36px;
+    font-weight: 700;
     margin: 0 0 15px 0;
     padding: 0;
 }
 .sec03 .txtBox p {
-    font-size: 25px;
+    font-weight: 400;
+    font-size: 23px;
 }
 .sec03 .txtBox span {
     color: #fff;
@@ -372,12 +374,22 @@ footer h4 {
 }
 .fBox01 {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     height: 240px;
-    gap: 60px;
-    margin: 0 auto;
+    padding: 0 50px;
+    
+}
+.fBox01 .fRight {
+    width: 70%;
+    height: 100%;
+}
+.fBox01 .fLight {
+    width: 30%;
+    height: 100%;
 }
 .fRight a {
-    font-size: 13px;
+    font-size: 14px;
     color: #fff;
     margin: 10px;
 }
@@ -415,11 +427,11 @@ footer .inner1200 {
     background: #fff;
     border-radius: 50%;
     margin: 0 12px 0 0;
+    text-align: center;
 }
 .sns .icon {
     font-size: 20px;
     color: #000;
-    text-align: center;
     line-height: 30px;
 }
 .fRight {
@@ -427,14 +439,20 @@ footer .inner1200 {
     flex-direction: column;
     flex-wrap: wrap;
     height: 240px;
-    justify-content: space-between;
 }
 .fRight ul {
     margin: 0 auto;
 }
+.fRight ul li {
+    margin-bottom: 8px;
+}
+.fRight h4 {
+    margin-bottom: 15px;
+}
 .mailbox {
     display: flex;
-    border-radius: 2px;
+    align-items: flex-start;
+    border-radius: 7px;
     width: 248px;
     height: 38px;
     margin: 0 0 50px 0;
@@ -442,6 +460,7 @@ footer .inner1200 {
 .mailbox input {
     width: 162px;
     height: 100%;
+    padding: 15px;
     overflow: hidden;
     text-align: center;
     line-height: 38px;
@@ -459,6 +478,7 @@ footer .inner1200 {
     text-align: center;
     color: #606060;
     font-size: 12px;
+    margin-bottom: 10px;
 }
 .fBox02 {
     text-align: center;
