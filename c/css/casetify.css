@@ -388,15 +388,54 @@ header .right > span a:first-child::after {
     border-radius: 0px 50px 0px 0px;
     background: #fff;
 }
-.sec04 .wrapBox .product > p {
+.sec04 .wrapBox .product > .pBox {
     width: 228px;
     height: 192px;
-    font-size: 21px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background: url(/dollop-syrup/c/images/Cfunction01.png) 50% 0 no-repeat;
     text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 21px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec04 .wrapBox .product .pBox > .p01 {
+    width: 100%;
+    height: 100%;
+    background: url(/dollop-syrup/c/images/Cfunctionb01.png) 50% 0 no-repeat;
     padding: 134px 0 0 0;
 }
+.sec04 .wrapBox .product .pBox > .p02 {
+    width: 100%;
+    height: 100%;
+    background: url(/dollop-syrup/c/images/Cfunctionb02.png) 50% 0 no-repeat;
+    padding: 134px 0 0 0;
+}
+.sec04 .wrapBox .product .pBox > .p03 {
+    width: 100%;
+    height: 100%;
+    background: url(/dollop-syrup/c/images/Cfunctionb03.png) 50% 0 no-repeat;
+    padding: 134px 0 0 0;
+}
+.sec04 .wrapBox .product .pBox > .p04 {
+    width: 100%;
+    height: 100%;
+    background: url(/dollop-syrup/c/images/Cfunctionb02.png) 50% 0 no-repeat;
+    padding: 134px 0 0 0;
+}
+.sec04 .wrapBox .product .pBox > .p05 {
+    width: 100%;
+    height: 100%;
+    background: url(/dollop-syrup/c/images/Cfunctionb05.png) 50% 0 no-repeat;
+    padding: 134px 0 0 0;
+}
+.sec04 .wrapBox .product .pBox > .p06 {
+    width: 100%;
+    height: 100%;
+    background: url(/dollop-syrup/c/images/Cfunctionb06.png) 50% 0 no-repeat;
+    padding: 134px 0 0 0;
+}
+
+
 .sec04 .wrapBox .product button {
     width: 76px;
     height: 44px;
@@ -413,8 +452,19 @@ header .right > span a:first-child::after {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
 }
+.sec04 .cfunction > div {
+    cursor: pointer;
+}
+svg {
+    fill: currentColor;
+    height: auto;
+    max-width: 50vmin;
+    transform-origin: center;
+    width: 66%;
+  }
+
+
 .sec05 {
     content: "";
     width: 100%;
