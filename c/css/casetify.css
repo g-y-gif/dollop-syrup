@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0");
 /* font awsome cdn */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
 
@@ -11,7 +11,7 @@
     list-style: none;
     font-family: 'Noto Sans KR', sans-serif;
     word-break: keep-all;
-    /* outline: 1px solid skyblue;     */
+    /* outline: 1px solid skyblue; */
 }
 a:link,
 a:visited {
@@ -362,6 +362,48 @@ header .right > span a:first-child::after {
     background-position: top center;
     background-repeat: no-repeat;
 }
+.sec04 .inner1000 {
+    width: 1000px;
+    height: 750px;
+    margin: 0 auto;
+}
+.sec04 .wrapBox {
+    width: 541px;
+    height: 440px;
+    margin: auto 0;
+}
+
+.sec04 .wrapBox h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+.sec04 .wrapBox .product {
+    display: flex;
+    width: 100%;
+    height: 342px;
+    box-shadow: 8px -4px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 50px 0px 0px;
+    background: #fff;
+}
+.sec04 .wrapBox .product > p {
+    width: 228px;
+    height: 192px;
+    font-size: 21px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: url(/dollop-syrup/c/images/Cfunction01.png) 0 50% no-repeat;
+    padding: 134px 0 0 0;
+}
+.sec04 .wrapBox .product button {
+    width: 76px;
+    height: 44px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    background: #fff;
+    cursor: pointer;
+}
+.arrow {
+    font-size: 36px;
+}
 
 .sec05 {
     content: "";
@@ -370,6 +412,7 @@ header .right > span a:first-child::after {
     background: url(/dollop-syrup/c/images/black-wave1.gif);
     background-size: cover;
 }
+
 
 
 
