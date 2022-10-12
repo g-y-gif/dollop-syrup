@@ -361,6 +361,7 @@ header .right > span a:first-child::after {
     background-image: url(/dollop-syrup/c/images/background2.png), url(/dollop-syrup/c/images/background3.png);
     background-position: top center;
     background-repeat: no-repeat;
+    position: relative;
 }
 .sec04 .inner1000 {
     width: 1000px;
@@ -457,13 +458,18 @@ header .right > span a:first-child::after {
     cursor: pointer;
 }
 svg {
-    fill: currentColor;
+    fill:currentColor;
     height: auto;
     max-width: 50vmin;
     transform-origin: center;
-    width: 66%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 220px;
+    height: 220px;
+    background: url(/dollop-syrup/c/images/droptozerocrop.png) 50% 50% no-repeat;
   }
-
 
 .sec05 {
     content: "";
