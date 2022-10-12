@@ -465,12 +465,17 @@ svg {
     width: 35%;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 100px;
     width: 210px;
     height: 210px;
     background: url(/dollop-syrup/c/images/droptozerocrop.png) 50% 50% no-repeat;
+    animation:spin 4s linear infinite;
   }
-
+  @keyframes spin { 
+    100% { 
+        transform:rotate(360deg); 
+    } 
+}
 .sec05 {
     content: "";
     width: 100%;
