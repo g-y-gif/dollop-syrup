@@ -31,18 +31,6 @@ header {
     z-index: 10000;
 }
 
-#side_nav {
-    position: fixed;
-    right: -480px;
-    top: 0;
-    height: 100%;
-    background: #fff;
-    width: 80%;
-    max-width: 340px;
-    z-index: 50;
-    transition: all .6s ease-in-out;
-}
-
 .right {
     display: flex;
     margin-right: 30px;
@@ -102,6 +90,7 @@ header .right > span a:first-child::after {
     margin-left: 15px;
 }
 
+
 /* 메뉴 */
 #slid_nav a:link,
 #slide_nav a:visited {
@@ -115,7 +104,7 @@ header .right > span a:first-child::after {
    height: 100%;
    width: 80%;
    max-width: 480px;
-   z-index: 50;
+   z-index: 100;
    transition: all .6s ease-in-out;
    padding: 25px 0; 
    background-color: #000;
@@ -123,6 +112,7 @@ header .right > span a:first-child::after {
 }
 .is-open {
    right: 0;
+   transition: all .6s ease-in-out;
 }
 .side_inner {
    width: 90%;
