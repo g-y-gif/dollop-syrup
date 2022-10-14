@@ -30,6 +30,19 @@ header {
     background: #fff;
     z-index: 10000;
 }
+
+#side_nav {
+    position: fixed;
+    right: -480px;
+    top: 0;
+    height: 100%;
+    background: #fff;
+    width: 80%;
+    max-width: 340px;
+    z-index: 50;
+    transition: all .6s ease-in-out;
+}
+
 .right {
     display: flex;
     margin-right: 30px;
