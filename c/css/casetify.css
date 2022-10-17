@@ -99,19 +99,21 @@ header .right > span a:first-child::after {
 }
 #side_nav {
    position: fixed;
-   right: -480px;
+   left: -480px;
    top: 0;
    height: 100%;
    width: 80%;
    max-width: 480px;
-   z-index: 100;
-   transition: all .6s ease-in-out;
+   z-index: 10001;
    padding: 25px 0; 
    background-color: #000;
-   background-image: url(/images/nav_background.gif);
+   background-image: url(/dollop-syrup/c/images/nav_background.gif);
+   transition: all .6s ease-in-out;
+   color: #fff;
+   overflow: auto;
 }
-.is-open {
-   right: 0;
+#side_nav.is-open {
+   left: 0;
    transition: all .6s ease-in-out;
 }
 .side_inner {
@@ -137,9 +139,20 @@ header .right > span a:first-child::after {
    display: none;
    color: #fff;
 }
-li a {
+.side_inner li > a {
    color: #fff;
+   font-size: 18px;
 }
+.side_inner li ul.nw a {
+    font-size: 14px;
+}
+.side_inner ul.nw li:first-of-type {
+    margin-bottom: 8px;
+}
+ul.nw li a span {
+    color: #BFFF00;
+}
+
 
 .sec01 {
     width: 100%;
@@ -463,6 +476,7 @@ li a {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
+    display: none;
 }
 .sec04 .wrapBox .product .pBox > .p01 {
     width: 100%;
@@ -531,6 +545,7 @@ li a {
     right: 50px;
     z-index: 1000;
     cursor: pointer;
+    display: none;
   }
 .top svg {
     fill:currentColor;
