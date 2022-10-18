@@ -43,6 +43,21 @@ $(function(){
     });
 });
 
+// sec02 rec03 slide
+$(function(){
+    var swiper = new Swiper(".autoplay", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    });
+});
+
+
+
+
 // sec02 trending case 이미지 전환
 $(function(){
     $("#case > div:last").show();
@@ -57,7 +72,7 @@ $(function(){
 $(function(){
     $(window).scroll(function(){
         if ($(this).scrollTop() > $(".more").offset().top) {
-            $(".sec03").css({
+            $(".sec04").css({
                 "animation-name": "backscroll",
             });
         }
