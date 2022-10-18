@@ -32,30 +32,6 @@ $(function(){
     });
 });
 
-
-
-// sec02 trending case 이미지 전환
-$(function(){
-    $("#case > div:last").show();
-    $("#tabPreview .circle").click(function(){
-        $(this).addClass("on").siblings().removeClass("on");
-        var imgindex = $(this).index();
-        $("#case > div").eq(imgindex).stop(true).fadeIn(500).siblings().fadeOut(200);
-    });
-});
-
-
-// sec03 background 스크롤
-$(function(){
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 850) {
-        }
-    });
-
-});
-
-
-
 // our mission 스크롤
 $(function(){
     $(window).scroll(function(){
@@ -67,11 +43,50 @@ $(function(){
     });
 });
 
-//product features
+// sec02 trending case 이미지 전환
 $(function(){
-    $("div.product > div.pBox").show();
-    $("div.cfuntion > div.i02 > img").click(function(){
-        $("div.product > div.pBox. > p02").show().siblings().hide("div.product > div.pBox. > p02");
+    $("#case > div:last").show();
+    $("#tabPreview .circle").click(function(){
+        $(this).addClass("on").siblings().removeClass("on");
+        var imgindex = $(this).index();
+        $("#case > div").eq(imgindex).stop(true).fadeIn(500).siblings().fadeOut(200);
     });
 });
+
+// sec03 background 스크롤
+$(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > $(".more").offset().top) {
+            $(".sec03").css({
+                "animation-name": "backscroll",
+            });
+        }
+    });
+
+});
+
+// sec04 product features next arrow
+$(function(){
+    var totalNum = $("#pBox > div").length
+    var currentNum = 1;
+    currentNum++;
+
+    $("#pBox").show();
+    $("#arrow").click(function(){
+        currentNum++;
+        if (currentNum > totalNum) {
+            currentNum = 1;
+        }
+        $("#pBox > div:first").insertAfter("#pBox > div:last"); 
+    });
+});
+
+
+
+
+
+
+
+
+
 
