@@ -5,6 +5,8 @@
         <title>케이스티파이</title>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
         <link rel="stylesheet" type="text/css" href="/dollop-syrup/c/css/casetify.css">
     </head>
     <body>
@@ -27,7 +29,7 @@
                 </div>
                 <ul>
                     <li> 
-                        <a href="#" class="nav_model"><i><b>기종</b></i></a>
+                        <a href="#" class="nav_model">기종</a>
                         <ul class="nw nav_model">
                             <li><b>애플</b></li>
                             <li><a href="#"><span>NEW!</span> 아이폰 14 프로</a></li>
@@ -112,7 +114,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="nav_print"><i><b>시그니처 프린트</b></i></a>
+                        <a href="#" class="nav_print">시그니처 프린트</a>
                         <ul class="nw nav_print">
                             <li><b>시그니처 프린트</b></li>
                             <li><a href="#"><span>NEW!</span> 최신 트렌딩 프린트</a></li>
@@ -154,7 +156,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="nav_custom"><i><b>커스텀 케이스</b></i></a>
+                        <a href="#" class="nav_custom">커스텀 케이스</a>
                         <ul class="nw nav_custom">
                             <li><b>커스텀 텍스트 케이스</b></li>
                             <li><a href="#">아이폰 케이스</a></li>
@@ -188,7 +190,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="nav_Accessory"><b><i>액세서리</i></b></a>
+                        <a href="#" class="nav_Accessory">액세서리</a>
                         <ul class="nw nav_Accessory">
                             <li><b>폰 스트랩 컬렉션</b></li>
                             <li><a href="#"><span>NEW!</span> 스트랩 걸이 & 폰 스트랩 세트</a></li>
@@ -227,7 +229,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="nav_trending"><b><i>최신 & 트렌딩</i></b></a>
+                        <a href="#" class="nav_trending">최신 & 트렌딩</a>
                         <ul class="nw nav_trending">
                             <li><b>신제품</b></li>
                             <li><a href="#"><span>NEW!</span> 아이폰 14</a></li>
@@ -278,7 +280,6 @@
                         </div>
                     </div>  
                 </div>
-                </div>
                 <div class="preview">
                     <h2>Trending Designs !</h2>
                     <div id="tabPreview">
@@ -296,6 +297,7 @@
                     <h1>보여줘 너만의 컬러를</h1>
                     <p><a href="#">view more</a></p>
                 </div>
+            </div>
         </section>
         <section class="sec03">
             <div class="inner">
@@ -305,11 +307,16 @@
                     <p>최상급 디자이너, 아티스트와 함께<span>하는 케이스티파이 Co-lab</span>을 소개할게요.</p>
                 </div>
                 <p class="more"><a href="#">Co-Lab 더보기</a></p>
-                <div class="coLab w01"></div>
-                <div class="coLab w02"></div>
-                <div class="coLab w03"></div>
-                <div class="coLab w04"></div>
-                <div class="coLab w05"></div>
+                <div data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-offset="200" 
+                data-aos-easing="ease-out-cubic">
+                    <div class="coLab w01"></div>
+                    <div class="coLab w02"></div>
+                    <div class="coLab w03"></div>
+                    <div class="coLab w04"></div>
+                    <div class="coLab w05"></div>
+                </div>
             </div>
         </section>
         <section class="sec04">
@@ -330,33 +337,36 @@
                     </div>
                 </div>
             </div>
-            <div id="cfunction">
-                <div class="function i01"><img src="/dollop-syrup/c/images/Cfunction01.png" alt="function"></div>
-                <div class="function i02"><img src="/dollop-syrup/c/images/Cfunction02.png" alt="function"></div>
-                <div class="function i03"><img src="/dollop-syrup/c/images/Cfunction03.png" alt="function"></div>
-                <div class="function i04"><img src="/dollop-syrup/c/images/Cfunction04.png" alt="function"></div>
-                <div class="function i05"><img src="/dollop-syrup/c/images/Cfunction05.png" alt="function"></div>
-                <div class="function i06"><img src="/dollop-syrup/c/images/Cfunction06.png" alt="function"></div>
-            </div>
-            <div class="top" role="button">
-                <svg viewBox="0 0 100 100" >
-                    <defs>
-                    <path id="pathcircle"
-                        d="
-                        M 50, 50
-                        m -37, 0
-                        a 37,37 0 1,1 74,0
-                        a 37,37 0 1,1 -74,0"/>
-                    </defs>
-                    <text font-size="10">
-                    <textPath xlink:href="#pathcircle">
-                        &nbsp;&nbsp;Our Mission Our Mission Our Mission Our Mission
-                    </textPath>
-                    </text>
-                </svg>
-            </div>
+            
         </section>
+        <div class="top">
+                <a href="/dollop-syrup/c/html/sub_page.html">
+                    <svg viewBox="0 0 100 100" >
+                        <defs>
+                        <path id="pathcircle"
+                            d="
+                            M 50, 50
+                            m -37, 0
+                            a 37,37 0 1,1 74,0
+                            a 37,37 0 1,1 -74,0"/>
+                        </defs>
+                        <text font-size="10">
+                        <textPath xlink:href="#pathcircle">
+                            &nbsp;&nbsp;Our Mission Our Mission Our Mission Our Mission
+                        </textPath>
+                        </text>
+                    </svg>
+                </a>
+            </div>
         <div class="sec05">
+            <div id="cfunction">
+                <div class="function i01" data-aos="zoom-in-up"><img src="/dollop-syrup/c/images/Cfunction01.png" alt="function"></div>
+                <div class="function i02" data-aos="zoom-in-up" data-aos-duration="1200"><img src="/dollop-syrup/c/images/Cfunction02.png" alt="function" data-aos-duration="1400"></div>
+                <div class="function i03" data-aos="zoom-in-up" data-aos-duration="1600"><img src="/dollop-syrup/c/images/Cfunction03.png" alt="function"></div>
+                <div class="function i04" data-aos="zoom-in-up" data-aos-duration="1800"><img src="/dollop-syrup/c/images/Cfunction04.png" alt="function"></div>
+                <div class="function i05" data-aos="zoom-in-up" data-aos-duration="2000"><img src="/dollop-syrup/c/images/Cfunction05.png" alt="function"></div>
+                <div class="function i06" data-aos="zoom-in-up" data-aos-duration="2200"><img src="/dollop-syrup/c/images/Cfunction06.png" alt="function"></div>
+            </div>
         </div>
         <footer>
             <div class="inner1200">
@@ -445,6 +455,7 @@
         
         <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="/dollop-syrup/c/js/casetify.js"></script>
     </body>
 </html>

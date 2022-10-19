@@ -1,4 +1,5 @@
 
+
 AOS.init();
 
 // 메뉴 클릭 메서드
@@ -48,67 +49,9 @@ $(function(){
     });
 });
 
-// our mission 스크롤
+// recasetify steps
 $(function(){
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 800) {
-            $("div.top").fadeIn(1800);
-        } else {
-            $("div.top").fadeOut(1000);
-        }    
+    $("div.steps > div > img").hover(function() {
+        $("div.steps > .stepw").toggleClass("on");
     });
 });
-
-// sec02 rec03 slide
-$(function(){
-    var swiper = new Swiper(".autoplay", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    });
-});
-
-
-
-
-// sec02 trending case 이미지 전환
-$(function(){
-    $("#case > div:last").show();
-    $("#tabPreview .circle").click(function(){
-        $(this).addClass("on").siblings().removeClass("on");
-        var imgindex = $(this).index();
-        $("#case > div").eq(imgindex).stop(true).fadeIn(500).siblings().fadeOut(200);
-    });
-});
-
-// sec03 background 스크롤
-$(function(){
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > $(".more").offset().top) {
-            $(".sec04").css({
-                "animation-name": "backscroll",
-            });
-        }
-    });
-
-});
-
-// sec04 product features next arrow
-$(function(){
-    var totalNum = $("#pBox > div").length
-    var currentNum = 1;
-    currentNum++;
-
-    $("#pBox").show();
-    $("#arrow").click(function(){
-        currentNum++;
-        if (currentNum > totalNum) {
-            currentNum = 1;
-        }
-        $("#pBox > div:first").insertAfter("#pBox > div:last");
-    });
-});
-

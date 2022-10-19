@@ -2,7 +2,11 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,200,0,0");
 /* font awsome cdn */
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+@import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
+
+
 
 * {
     margin: 0;
@@ -25,6 +29,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    top: 0;
     background: #fff;
     z-index: 10000;
 }
@@ -105,7 +110,10 @@ header .right > span a:first-child::after {
    z-index: 10001;
    padding: 25px 0; 
    background-color: #000;
-   background-image: url(/dollop-syrup/c/images/nav_background.gif);
+   background-image: url(/dollop-syrup/c/images/nav_background2.gif);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
    transition: all .6s ease-in-out;
    color: #fff;
    overflow: auto;
@@ -126,6 +134,10 @@ header .right > span a:first-child::after {
    display: flex;
    justify-content: flex-end;
 }
+.menuclose > img {
+    width: 30px;
+    height: 30px;
+}
 .side_inner > ul {
    display: flex;
    flex-direction: column;
@@ -140,6 +152,8 @@ header .right > span a:first-child::after {
 .side_inner li > a {
    color: #fff;
    font-size: 18px;
+   font-style: italic;
+   font-weight: bold;
 }
 .side_inner li ul.nw a {
     font-size: 14px;
@@ -153,7 +167,7 @@ ul.nw li a span {
 
 
 .sec01 {
-    width: 100%;
+    /* width: 100%; */
     height: 30px;
     line-height: 30px;
     font-size: 15px;
@@ -161,7 +175,7 @@ ul.nw li a span {
     text-align: center;
 }
 .sec02 {
-    width: 100%;
+    /* width: 100%; */
     height: 924px;
     border-bottom: 1px solid #000;
 }
@@ -323,7 +337,7 @@ ul.nw li a span {
     height: 468px;
     position: absolute;
     bottom: 71px;
-    right: 104px;
+    right: 0px;
 }
 .titletext h3 {
     font-size: 40px;
@@ -337,6 +351,7 @@ ul.nw li a span {
     border: 1px solid #000;
     border-radius: 50%;
     font-size: 22px;
+
 }
 
 .sec03 {
@@ -433,7 +448,7 @@ ul.nw li a span {
 
 .sec04 {
     width: 100%;
-    height: 800px;
+    height: 680px;
     background: #fff;
     background-image: url(/dollop-syrup/c/images/background2.png), url(/dollop-syrup/c/images/background3.png);
     background-position-x: 75%;
@@ -455,26 +470,30 @@ ul.nw li a span {
 
 .sec04 .inner1000 {
     width: 1000px;
-    height: 750px;
+    height: 100%;
     margin: 0 auto;
+    position: relative;
 }
 .sec04 .wrapBox {
-    width: 541px;
+    width: 450px;
     height: 440px;
-    padding: 155px 0 0 0;
+    text-align: left;
+    bottom: 0;
+    left: 0;
+    position: absolute;
 }
 
 .sec04 .wrapBox h2 {
     font-size: 45px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .sec04 .wrapBox .product {
     display: flex;
     justify-content: space-between;
     align-items:flex-end;
-    padding: 0 70px;
+    padding: 0 30px;
     width: 100%;
-    height: 342px;
+    height: 300px;
     box-shadow: 8px -4px 4px 1px rgba(0, 0, 0, 0.25);
     border-radius: 0px 50px 0px 0px;
     background: #fff;
@@ -539,12 +558,7 @@ ul.nw li a span {
 .arrow {
     font-size: 36px;
 }
-#cfunction {
-    width: 1250px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .top {
     width: 210px;
@@ -554,7 +568,6 @@ ul.nw li a span {
     bottom: 8%;
     right: 50px;
     z-index: 1000;
-    cursor: pointer;
     display: none;
   }
 .top svg {
@@ -574,13 +587,23 @@ ul.nw li a span {
 .sec05 {
     content: "";
     width: 100%;
-    height: 300px;
-    background: url(/dollop-syrup/c/images/black-wave1.gif);
-    background-size: cover;
+    height: 500px;
+    background: url(/dollop-syrup/c/images/black-wave1.gif) bottom no-repeat;
+    /* background-size: cover; */
 }
 
+#cfunction {
+    padding-top: 50px;
+    width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
 
-
+.animate__bounce {
+    animation: bounce;
+    animation-duration: 2s;
+}
 
 footer {
     background: #000;
