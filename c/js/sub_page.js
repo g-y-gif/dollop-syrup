@@ -50,8 +50,3 @@ $(function(){
 });
 
 // recasetify steps
-$(function(){
-    $("div.steps > div > img").hover(function() {
-        $("div.steps > .stepw").toggleClass("on");
-    });
-});
