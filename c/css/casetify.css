@@ -235,9 +235,13 @@ ul.nw li a span {
     height: 292px;
     top: 0px;
     right: 0px;
-    /* background: url(/dollop-syrup/c/images/mainRectangle.png) 50% 50% no-repeat; */
-    /* background-size: cover; */
     overflow: hidden;
+}
+
+.swiper-slide > img {
+    width: 103px;
+    height: 292px;
+    object-fit: cover;
 }
 
 .preview {
