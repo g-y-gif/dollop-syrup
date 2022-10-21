@@ -165,6 +165,12 @@ ul.nw li a span {
     color: #BFFF00;
 }
 
+.inner {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
 
 .sec01 {
     /* width: 100%; */
@@ -179,12 +185,7 @@ ul.nw li a span {
     height: 924px;
     border-bottom: 1px solid #000;
 }
-.inner {
-    width: 1440px;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-}
+
 .titleimg {
     content: "";
     width: 456px;
@@ -355,15 +356,11 @@ ul.nw li a span {
     border: 1px solid #000;
     border-radius: 50%;
     font-size: 22px;
-
 }
 
 .sec03 {
     width: 100%;
     height: 1150px;
-    /* background-image: url(/dollop-syrup/c/images/logoCo_Lab.png), url(/dollop-syrup/c/images/background01.png);
-    background-position: 96% 4%, top center;
-    background-repeat:no-repeat; */
     background: url(/dollop-syrup/c/images/logoCo_Lab.png) 96% 4% no-repeat, url(/dollop-syrup/c/images/backgroundPC.png) top center no-repeat;
     background-size: auto, cover;
 }
@@ -458,7 +455,7 @@ ul.nw li a span {
 
 .sec04 {
     width: 100%;
-    height: 700px;
+    height: 800px;
     background: #fff;
     background-image: url(/dollop-syrup/c/images/background_waterdrop02.png);
     background-position-x: 75%;
@@ -474,25 +471,16 @@ ul.nw li a span {
 }
 @keyframes backscroll {
     0% { background-size: 400px 400px; }
-    100% { background-size: 800px 800px; }
+    100% { background-size: 700px 700px; }
 }
-/* @keyframes backscroll {
-    0% { background-size: 120%, 80%; }
-    100% { background-size:120%, 150%; }
-} */
 
-.sec04 .inner1000 {
-    width: 1000px;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-}
+
 .sec04 .wrapBox {
-    width: 450px;
-    height: 440px;
+    width: 440px;
+    height: 420px;
     text-align: left;
-    bottom: 0;
-    left: 0;
+    bottom: 80px;
+    left: 280px;
     position: absolute;
 }
 
@@ -600,13 +588,12 @@ ul.nw li a span {
 .sec05 {
     content: "";
     width: 100%;
-    height: 500px;
+    height: 450px;
     background: url(/dollop-syrup/c/images/black-wave1.gif) bottom no-repeat;
     /* background-size: cover; */
 }
 
 #cfunction {
-    padding-top: 50px;
     width: 1250px;
     margin: 0 auto;
     display: flex;

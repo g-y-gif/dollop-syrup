@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+body {
+    max-width: 100%;
+}
+
+header {
+
+    width: 100%;
+    height: 50px;
+}
+.logo {
+    width: 133px;
+    height: 40px;
+}
+header .right > span a:first-child::after {
+    height: 15px;
+}
+
+
+/* sec01 */
+.sec01 {
+    height: 25px;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+
+/* sec02 */
+.sec02 {
+    height: 429px;
+}
+.sec02 .inner {
+    width: 744px;
+    height: 100%;
+}
+.titleimg {
+    content: "";
+    width: 215px;
+    height: 108px;
+    background: url(/dollop-syrup/c/images/showyourcolors.png);
+    background-size: cover;
+    position: absolute;
+    top: 25px;
+    left: 39px;
+}
+#case {
+    width: 161px;
+    height: 257px;
+    bottom: 0;
+    left: 62px;
+}
+#case img {
+    width: 161px;
+    height: 257px;
+    object-fit: cover;
+}
+.rec01 {
+    width: 402px;
+    top: 33px;
+    right: 72px;
+    border-top: 2px solid #000;
+}
+.rec01 > p {
+    font-size: 12px;
+}
+.rec01 > h3 {
+    font-size: 20px;
+}
+.rec02 {
+    width: 61px;
+    height: 205px;
+    top: 9px;
+    right: 28px;
+}
+.rec03 {
+    width: 70px;
+    height: 199px;
+}
+.swiper-slide > img {
+    width: 70px;
+    height: 199px;
+}
+.preview {
+    width: 188px;
+    height: 220px;
+    bottom: 19px;
+    left: 300px;
+}
+.preview h2 {
+    font-size: 15px;
+}
+#tabPreview {
+    width: 188px;
+    height: 120px;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+.circle {
+    width: 45px;
+    height: 45px;
+}
+.on {
+    border: 2px solid #fff;
+}
+.c00, .c01, .c02, .c03, .c04, .c05 {
+    background-size: cover;
+}
+.titletext {
+    width: 99px;
+    height: 200px;
+    bottom: 16px;
+    right: 107px;
+}
+.titletext h3 {
+    font-size: 20px;
+}
+.titletext h1 {
+    font-size: 32px;
+}
+.titletext p {
+    width: 99px;
+    height: 26px;
+    border-radius: 50%;
+    line-height: 26px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* sec03 */
+.sec03 {
+    width: 100%;
+    height: 500px;
+    background: url(/dollop-syrup/c/images/logoCo_Lab.png) 96% 4% no-repeat, url(/dollop-syrup/c/images/backgroundPC.png) top center no-repeat;
+    background-size: 78px 34px, cover;
+}
+.sec03 .inner {
+    width: 744px;
+    height: 100%;
+}
+.txtBox {
+    top: 62px;
+    left: 327px;
+}
+.sec03 .txtBox h3 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+.sec03 .txtBox p {
+    font-size: 12px;
+}
+.sec03 .inner .more {
+    width: 99px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 11px;
+    top: 145px;
+    right: 20px;
+}
+.coLab {
+    width: 85px;
+    height: 146px;
+    border-radius: 15px;
+}
+.w01 {
+    background-size: cover;
+    top: 86px;
+    left: 46px;
+    box-shadow: -5px 5px 0px 1px #F28080;
+}
+.w02 {
+    background-size: cover;
+    top: 115px;
+    left: 176px;
+    box-shadow: -5px 5px 0px 1px #F23838;
+}
+.w03 {
+    background-size: cover;
+    top: 170px;
+    left: 306px;
+    box-shadow: -5px 5px 0px 1px #F27C38;
+}
+.w04 {
+    background-size: cover;
+    top: 277px;
+    left: 68px;
+    box-shadow: -5px 5px 0px 1px #F2DA63;
+}
+.w05 {
+    background-size: cover;
+    top: 306px;
+    left: 198px;
+    box-shadow: -5px 5px 0px 1px #428C37;
+}
+
+
+/* sec04 */
+.sec04 {
+    width: 100%;
+    height: 300px;
+    background: #fff;
+    background-image: url(/dollop-syrup/c/images/background_waterdrop02.png);
+    background-position-x: 75%;
+    background-position-y: 0%;
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+    /* animation-delay: 0.5s; */
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes backscroll {
+    0% { background-size: 150px 150px; }
+    100% { background-size: 300px 300px; }
+}
+
+.sec04 .wrapBox {
+    width: 214px;
+    height: 237px;
+    text-align: left;
+    bottom: 20px;
+    left: 170px;
+}
+.sec04 .wrapBox h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.sec04 .wrapBox .product {
+    padding: 0 30px;
+    width: 100%;
+    height: 198px;
+    padding: 0 10px;
+}
+#pBox {
+    width: 135px;
+    height: 115px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 12px;
+}
+#pBox > .p01 {
+    background: url(/dollop-syrup/c/images/Cfunctionb01.png) 50% 0 no-repeat;
+    padding: 60px 0 0 0;
+    background-size: 55px 55px;
+}
+#pBox > .p02 {
+    background: url(/dollop-syrup/c/images/Cfunctionb02.png) 50% 0 no-repeat;
+    padding: 60px 0 0 0;
+    background-size: 55px 55px;
+}
+#pBox > .p03 {
+    background: url(/dollop-syrup/c/images/Cfunctionb03.png) 50% 0 no-repeat;
+    padding: 60px 0 0 0;
+    background-size: 55px 55px;
+}
+#pBox > .p04 {
+    background: url(/dollop-syrup/c/images/Cfunctionb04.png) 50% 0 no-repeat;
+    padding: 60px 0 0 0;
+    background-size: 55px 55px;
+}
+#pBox > .p05 {
+    background: url(/dollop-syrup/c/images/Cfunctionb05.png) 50% 0 no-repeat;
+    padding: 60px 0 0 0;
+    background-size: 55px 55px;
+}
+#pBox > .p06 {
+    background: url(/dollop-syrup/c/images/Cfunctionb06.png) 50% 0 no-repeat;
+    padding: 60px 0 0 0;
+    background-size: 55px 55px;
+}
