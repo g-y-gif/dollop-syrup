@@ -454,6 +454,7 @@ ul.nw li a span {
 
 
 .sec04 {
+    position: relative;
     width: 100%;
     height: 800px;
     background: #fff;
@@ -570,7 +571,8 @@ ul.nw li a span {
     right: 50px;
     z-index: 1000;
     display: none;
-  }
+}
+
 .top svg {
     fill:currentColor;
     max-width: 50vmin;
@@ -578,19 +580,17 @@ ul.nw li a span {
     width: 210px;
     height: 210px;
     animation:spin 4s linear infinite;
-  }
+}
 
-  @keyframes spin { 
+@keyframes spin { 
     100% { 
         transform:rotate(360deg); 
     } 
 }
 .sec05 {
-    content: "";
     width: 100%;
     height: 450px;
     background: url(/dollop-syrup/c/images/black-wave1.gif) bottom no-repeat;
-    /* background-size: cover; */
 }
 
 #cfunction {
@@ -605,37 +605,23 @@ ul.nw li a span {
     animation-duration: 2s;
 }
 
+
+
 footer {
     background: #000;
     color: #fff;
     position: relative;
     z-index: 1100;
 }
+footer .inner1200 {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
 footer h4 {
     font-size: 15px;
 }
-.fBox01 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 240px;
-    padding: 0 50px;
-    
-}
-.fBox01 .fRight {
-    width: 70%;
-    height: 100%;
-}
-.fBox01 .fLight {
-    width: 30%;
-    height: 100%;
-}
-.fRight a {
-    font-size: 14px;
-    color: #fff;
-    margin: 10px;
-}
-footer:first-child {
+footer:first-of-type {
     height: 630px;
 }
 footer:first-of-type .inner1200 {
@@ -644,52 +630,24 @@ footer:first-of-type .inner1200 {
     flex-direction: column;
     gap: 60px;
 }
-footer:last-child {
-    height: 100px;
-}
-footer .inner1200 {
-    width: 1200px;
-    height: 100%;
-    margin: 0 auto;
-}
 
-.fLeft {
+
+.fBox01 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 240px;
+    padding: 0 50px;
+    
+}
+.fBox01 .fLight {
+    width: 30%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
 .fLeft h4:first-child {
     margin: 0 0 18px 0;
-}
-.sns .snsBox {
-    display: flex;
-}
-.sns a {
-    width: 30px;
-    height: 30px;
-    background: #fff;
-    border-radius: 50%;
-    margin: 0 12px 0 0;
-    text-align: center;
-}
-.sns .icon {
-    font-size: 20px;
-    color: #000;
-    line-height: 30px;
-}
-.fRight {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 240px;
-}
-.fRight ul {
-    margin: 0 auto;
-}
-.fRight ul li {
-    margin-bottom: 8px;
-}
-.fRight h4 {
-    margin-bottom: 15px;
 }
 .mailbox {
     display: flex;
@@ -716,12 +674,48 @@ footer .inner1200 {
     font-size: 13px;
     cursor: pointer;
 }
-.fBox03 > p {
-    text-align: center;
-    color: #606060;
-    font-size: 12px;
-    margin-bottom: 10px;
+.sns .snsBox {
+    display: flex;
 }
+.sns a {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 12px 0 0;
+    text-align: center;
+}
+.sns .icon {
+    font-size: 20px;
+    color: #000;
+    line-height: 30px;
+}
+
+
+.fBox01 .fRight {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.fRight h4 {
+    margin-bottom: 15px;
+}
+.fRight a {
+    font-size: 14px;
+    color: #fff;
+    margin: 10px;
+}
+.fRight ul {
+    margin: 0 auto;
+}
+.fRight ul li {
+    margin-bottom: 8px;
+}
+
+
+
 .fBox02 {
     text-align: center;
 }
@@ -738,6 +732,19 @@ footer .inner1200 {
 }
 .fBox02 p a {
     color: #fff;
+}
+
+
+.fBox03 > p {
+    text-align: center;
+    color: #606060;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+
+footer:last-of-type {
+    height: 100px;
 }
 footer:last-of-type .inner1200 {
     display: flex;
@@ -757,3 +764,17 @@ footer .inner1200 .left2 p:nth-of-type(2) a {
 footer .inner1200 .left2 a {
     color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

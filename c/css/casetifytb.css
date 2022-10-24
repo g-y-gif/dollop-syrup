@@ -222,7 +222,7 @@ header .right > span a:first-child::after {
     height: 237px;
     text-align: left;
     bottom: 20px;
-    left: 170px;
+    left: 174px;
 }
 .sec04 .wrapBox h2 {
     font-size: 20px;
@@ -242,32 +242,153 @@ header .right > span a:first-child::after {
     font-size: 12px;
 }
 #pBox > .p01 {
-    background: url(/dollop-syrup/c/images/Cfunctionb01.png) 50% 0 no-repeat;
-    padding: 60px 0 0 0;
+    background: url(/dollop-syrup/c/images/Cfunctionb01.png) 50% 10% no-repeat;
+    padding: 80px 0 0 0;
     background-size: 55px 55px;
 }
 #pBox > .p02 {
-    background: url(/dollop-syrup/c/images/Cfunctionb02.png) 50% 0 no-repeat;
-    padding: 60px 0 0 0;
+    background: url(/dollop-syrup/c/images/Cfunctionb02.png) 50% 10% no-repeat;
+    padding: 80px 0 0 0;
     background-size: 55px 55px;
 }
 #pBox > .p03 {
-    background: url(/dollop-syrup/c/images/Cfunctionb03.png) 50% 0 no-repeat;
-    padding: 60px 0 0 0;
+    background: url(/dollop-syrup/c/images/Cfunctionb03.png) 50% 10% no-repeat;
+    padding: 80px 0 0 0;
     background-size: 55px 55px;
 }
 #pBox > .p04 {
-    background: url(/dollop-syrup/c/images/Cfunctionb04.png) 50% 0 no-repeat;
-    padding: 60px 0 0 0;
+    background: url(/dollop-syrup/c/images/Cfunctionb04.png) 50% 10% no-repeat;
+    padding: 80px 0 0 0;
     background-size: 55px 55px;
 }
 #pBox > .p05 {
-    background: url(/dollop-syrup/c/images/Cfunctionb05.png) 50% 0 no-repeat;
-    padding: 60px 0 0 0;
+    background: url(/dollop-syrup/c/images/Cfunctionb05.png) 50% 10% no-repeat;
+    padding: 80px 0 0 0;
     background-size: 55px 55px;
 }
 #pBox > .p06 {
-    background: url(/dollop-syrup/c/images/Cfunctionb06.png) 50% 0 no-repeat;
-    padding: 60px 0 0 0;
+    background: url(/dollop-syrup/c/images/Cfunctionb06.png) 50% 10% no-repeat;
+    padding: 80px 0 0 0;
     background-size: 55px 55px;
+}
+
+.sec04 .wrapBox .product button {
+    width: 48px;
+    height: 28px;
+}
+.arrow {
+    font-size: 28px;
+}
+
+.top {
+    width: 150px;
+    height: 150px;
+    bottom: 10%;
+    right: 30px;
+    background-size: 95px 95px;
+}
+.top svg {
+    width: 150px;
+    height: 150px;
+}
+
+/* sec05 */
+.sec05 {
+    height: 235px;
+    background-size: contain;
+    padding-top: 36px;
+}
+#cfunction {
+    width: 744px;
+}
+#cfunction .function > img {
+    width: 55px;
+    height: 55px;
+}
+
+
+/* footer */
+footer h4 {
+    font-size: 13px;
+}
+footer:first-of-type .inner1200 {
+    width: 744px;
+    height: 400px;
+    padding: 15px 0;
+    gap: 15px;
+
+}
+footer:first-of-type {
+    height: 390px;
+}
+
+.fBox01 {
+    height: 205px;
+    padding: 0;
+}
+.fBox01 .fLeft {
+    width: 40%;
+}
+.fBox01 .fLeft h4:first-child {
+    margin: 0 0 10px 0;
+}
+.fLeft h4:first-child {
+    margin: 0 0 10px 0;
+}
+.mailbox {
+    border-radius: 2px;
+    width: 198px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+.mailbox input {
+    width: 127px;
+    height: 34px;
+    padding: 15px;
+    line-height: 34px;
+    font-size: 11px;
+}
+.mailbox p {
+    width: 71px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+
+.fBox01 .fRight {
+    width: 60%;
+}
+.fRight h4 {
+    margin-bottom: 10px;
+}
+.fRight a {
+    font-size: 12px;
+    margin: 0px;
+}
+.fRight ul li {
+    margin-bottom: 3px;
+}
+
+
+.fBox02 p > span {
+    font-size: 17px;
+}
+
+.fBox03 > p {
+    font-size: 10px;
+    margin: 0 0 5px 0;
+}
+
+
+footer:last-of-type {
+    height: 45px;
+}
+footer:last-of-type .inner1200 {
+    width: 650px;
+    height: 45px;
+}
+footer:last-of-type .inner1200 p {
+    font-size: 12px;
 }
