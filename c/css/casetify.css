@@ -360,6 +360,8 @@ ul.nw li a span {
     font-size: 22px;
 }
 
+
+/* sec03 */
 .sec03 {
     width: 100%;
     height: 1150px;
@@ -455,6 +457,7 @@ ul.nw li a span {
 
 
 
+/* sec04 */
 .sec04 {
     position: relative;
     width: 100%;
@@ -549,8 +552,6 @@ ul.nw li a span {
     background: url(/dollop-syrup/c/images/Cfunctionb06.png) 50% 0 no-repeat;
     padding: 134px 0 0 0;
 }
-
-
 .sec04 .wrapBox .product button {
     width: 76px;
     height: 44px;
@@ -564,6 +565,7 @@ ul.nw li a span {
 }
 
 
+/* sub_button */
 .top {
     width: 210px;
     height: 210px;
@@ -589,6 +591,10 @@ ul.nw li a span {
         transform:rotate(360deg); 
     } 
 }
+
+
+
+/* sec05 */
 .sec05 {
     width: 100%;
     height: 450px;

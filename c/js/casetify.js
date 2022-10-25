@@ -60,18 +60,26 @@ $(function(){
 });
 
 // sec02 rec03 slide
-$(function(){
-    var swiper = new Swiper(".autoplay", {
+var swiper = new Swiper(".autoplay", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
+        delay: 3000,
+        disableOnInteraction: false,
     },
-    });
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+            pagination: {
+                el: "",
+                clickable: true,
+              },
+        }
+      },
 });
-
-
 
 
 // sec02 trending case 이미지 전환
@@ -111,4 +119,12 @@ $(function(){
         $("#pBox > div:first").insertAfter("#pBox > div:last");
     });
 });
+
+// footer nav 슬라이드토글
+// var body = document.getElementsByTagName("body")[0];
+
+// window.onresize = function(event){
+// var innerWidth = window.innerWidth;
+// innerWidth <= "640" ? body.style.borderColor = "blue" : body.style.borderColor = "black";
+// }
 
