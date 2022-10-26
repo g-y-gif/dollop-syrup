@@ -125,11 +125,12 @@ header .right > span a:first-child::after {
 #case img {
     width: 122px;
     height: 164px;
+    object-position: top;
 }
 .rec01 {
     width: 320px;
     height: 42px;
-    top: 516px;
+    top: 506px;
     right: 0;
     border-top: 1px solid #000;
     justify-content: flex-end;

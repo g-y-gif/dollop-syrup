@@ -120,11 +120,12 @@ $(function(){
     });
 });
 
-// footer nav 슬라이드토글
-// var body = document.getElementsByTagName("body")[0];
 
-// window.onresize = function(event){
-// var innerWidth = window.innerWidth;
-// innerWidth <= "640" ? body.style.borderColor = "blue" : body.style.borderColor = "black";
-// }
 
+$(function(){
+    if ((window).innerWidth() < 640) {
+        $("div.fRight ul.hide_ul > li > h4").click(function(){
+            $(".fRight .hide_ul > li > ul").slideToggle(350, "linear");
+        });
+    }
+});
