@@ -121,11 +121,12 @@ $(function(){
 });
 
 
-
+// footer li slidToggle
 $(function(){
-    if ((window).innerWidth() < 640) {
-        $("div.fRight ul.hide_ul > li > h4").click(function(){
-            $(".fRight .hide_ul > li > ul").slideToggle(350, "linear");
+    if ($(window).width() < 641) {
+        $("ul.hide_ul > li h4").click(function(){
+            $(this).next("ul").stop().slideToggle(350, "linear")
+            $(this).parent().siblings().children("ul").slidUp();
         });
     }
 });
