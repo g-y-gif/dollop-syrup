@@ -106,19 +106,22 @@ $(function(){
 
 // sec04 product features next arrow
 $(function(){
-    var totalNum = $("#pBox > div").length
-    var currentNum = 1;
-    currentNum++;
+    var totalNum = $("#pBox > div").length -1;
+    var currentNum = 0;
 
     $("#pBox").show();
     $("#arrow").click(function(){
         currentNum++;
         if (currentNum > totalNum) {
-            currentNum = 1;
+            currentNum = 0;
         }
         $("#pBox > div:first").insertAfter("#pBox > div:last");
+        console.log(currentNum);
+
+        $("#cfunction > div").eq(currentNum).addClass("on").siblings().removeClass("on");
     });
 });
+
 
 
 // footer li slidToggle

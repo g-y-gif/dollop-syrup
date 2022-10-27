@@ -102,7 +102,7 @@ header .right > span a:first-child::after {
 }
 #side_nav {
    position: fixed;
-   left: -480px;
+   left: 0;
    top: 0;
    height: 100%;
    width: 80%;
@@ -117,10 +117,11 @@ header .right > span a:first-child::after {
    transition: all .6s ease-in-out;
    color: #fff;
    overflow: auto;
+   transform:translateX(-100%);
 }
 #side_nav.is-open {
-   left: 0;
    transition: all .6s ease-in-out;
+   transform: translateX(0);
 }
 .side_inner {
    width: 90%;
@@ -606,6 +607,17 @@ ul.nw li a span {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+}
+
+#cfunction > div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#cfunction > div.on {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 .animate__bounce {

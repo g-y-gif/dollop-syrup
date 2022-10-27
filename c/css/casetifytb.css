@@ -300,6 +300,10 @@ header .right > span a:first-child::after {
 #cfunction {
     width: 744px;
 }
+#cfunction > div {
+    width: 55px;
+    height: 55px;
+}
 #cfunction .function > img {
     width: 55px;
     height: 55px;

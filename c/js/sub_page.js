@@ -50,16 +50,7 @@ $(function(){
 });
 
 
-// contentBox02 steps hover
-// $(function(){
-//     $(".contentBox02 .steps > div").hover(function(){
-//         $(this).toggleClass("on");
-
-//         var stepindex = $(this).index();
-//         $(".contentBox02 .stepsTxt > div").eq(stepindex).stop(true).fadeIn(500).siblings().fadeOut(200);
-//     });
-// });
-
+// sec03 contentBox02 steps
 $(function(){
     if ($(window).width() > 640) {
         $(".contentBox02 .steps > div").hover(function(){
