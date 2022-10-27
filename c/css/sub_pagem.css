@@ -159,7 +159,7 @@ header .right > span a:first-child::after {
 
 /* sec03 */
 .sec03 {
-    height: 1370px;
+    height: 1570px;
 }
 
 .sec03 .inner {
@@ -182,4 +182,193 @@ header .right > span a:first-child::after {
     padding-top: 5px;
     padding-left: 79px;
     padding-right: 20px;
+}
+.sec03 .inner .recasetify {
+    margin: 45px 0 0 0;
+}
+
+.sec03 .inner .recasetify > div {
+    width: 280px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 0;
+}
+.sec03 .inner h4 {
+    width: 20%;
+    height: 25px;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.sec03 .inner .contentBox01 {
+    width: 320px;
+    margin: 71px auto 0 auto;
+}
+.sec03 .inner .contentBox01 p {
+    font-size: 14px;
+    width: 80%;
+}
+.sec03 .inner .contentBox02 {
+    width: 320px;
+    height: auto;
+    text-align: right;
+    display:block;
+    margin: 55px auto;
+}
+.sec03 .inner .contentBox02 > div{
+    display: flex;
+    gap: 10px;
+}
+.sec03 .inner .contentBox02 .steps {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
+    height: 400px;
+}
+.sec03 .inner .contentBox02 .steps div {
+    flex: 0;
+    width: 100px;
+    height: 100px;
+}
+.sec03 .inner .contentBox02 .stepsTxt {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: 400px;
+    overflow: hidden;
+} 
+.sec03 .inner .contentBox02 .stepsTxt > div {
+    width: auto;
+    height: 100px;
+    margin: 0 auto;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} 
+.sec03 .inner .contentBox02 .stepsTxt > div p:first-child {
+    text-align: left;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 100%;
+}
+
+footer h4 {
+    font-size: 13px;
+}
+
+footer:first-of-type {
+    height: auto;
+}
+footer:first-of-type .inner1200 {
+    width: 390px;
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.fBox01 {
+    width: 198px;
+    height: auto;
+    padding: 0;
+    justify-content: space-between;
+}
+.fBox01 .fLeft {
+    width: 198px;
+    margin-bottom: 15px;
+}
+
+.fLeft h4:first-child {
+    margin: 0 0 10px 0;
+}
+.mailbox {
+    border-radius: 2px;
+    width: 198px;
+    height: 30px;
+    margin: 0 0 15px 0;
+}
+.mailbox input {
+    width: 127px;
+    height: 34px;
+    padding: 15px;
+    line-height: 34px;
+    font-size: 11px;
+}
+.mailbox p {
+    width: 71px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 11px;
+}
+
+.fBox01 .fRight {
+    width: 135px;
+    height: auto;
+    justify-content: space-between;
+}
+.fRight h4 {
+    margin-bottom: 12px;
+}
+.fRight ul {
+    margin: 0;
+    cursor: pointer;
+}
+.fRight .hide_ul > li > ul {
+    display: none;
+}
+
+
+
+.fBox02 {
+    width: 181px;
+    height: auto;
+    margin: 20px 0;
+}
+.fBox02 p, .fBox02 a {
+    font-size: 15px;
+}
+.fBox02 p > span {
+    font-size: 17px;
+}
+
+
+.fBox03 {
+    width: 320px;
+    height: auto;
+}
+.fBox03 > p {
+    text-align: center;
+    color: #606060;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+footer:last-of-type {
+    height: 70px;
+}
+footer:last-of-type .inner1200 {
+    padding: 10px 0;
+    width: 370px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center; 
+}
+footer .inner1200 .left2 {
+    gap: 5px;
+  
+}
+footer .inner1200 .left2 p:nth-of-type(2) a {
+    padding:0 5px;
 }

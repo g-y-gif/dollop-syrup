@@ -49,4 +49,15 @@ $(function(){
     });
 });
 
-// recasetify steps
+
+
+
+// footer li slidToggle
+$(function(){
+    if ($(window).width() < 641) {
+        $("ul.hide_ul > li h4").click(function(){
+            $(this).next("ul").stop().slideToggle(350, "linear")
+            $(this).parent().siblings().children("ul").slidUp();
+        });
+    }
+});
