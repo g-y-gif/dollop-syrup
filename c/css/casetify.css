@@ -598,8 +598,8 @@ ul.nw li a span {
 /* sec05 */
 .sec05 {
     width: 100%;
-    height: 450px;
-    background: url(/dollop-syrup/c/images/black-wave1.gif) bottom no-repeat;
+    height: 650px;
+    background: url(/dollop-syrup/c/images/black-wave1.gif) 50% 40% no-repeat;
 }
 
 #cfunction {
