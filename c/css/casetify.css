@@ -117,7 +117,8 @@ header .right > span a:first-child::after {
    transition: all .6s ease-in-out;
    color: #fff;
    overflow: auto;
-   transform:translateX(-100%);
+   transform:translateX(-150%);
+   box-shadow: 100px 0px 30px rgba(0, 0, 0, 0.6);
 }
 #side_nav.is-open {
    transition: all .6s ease-in-out;
