@@ -3,16 +3,15 @@ AOS.init();
 
 // 메뉴 클릭 메서드
 $(function(){
+    // menu click
     $("header div.menu").click(function(){
         $("#side_nav").addClass("is-open")
     });
     $(".menuclose > img").click(function(){
         $("#side_nav").removeClass("is-open")
     });
-});
 
-// 메뉴 > ul
-$(function(){
+    //메뉴 > ul
     $("div.side_inner li > a.nav_model").click(function(){
         $(this).text(function(e, text) {
             return text === '기종' ? 'Model' : '기종'
@@ -46,54 +45,38 @@ $(function(){
         });
         $("ul.nav_trending").slideToggle(350, "linear");
     });
-});
 
-// our mission 스크롤
-$(function(){
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 800) {
-            $("div.top").fadeIn(1800);
-        } else {
-            $("div.top").fadeOut(1000);
-        }    
-    });
-});
-
-// sec02 rec03 slide
-var swiper = new Swiper(".autoplay", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-            pagination: {
-                el: "",
-                clickable: true,
-              },
-        }
-      },
-});
-
-
-// sec02 trending case 이미지 전환
-$(function(){
+    // sec02 trending case image change
     $("#case > div:last").show();
     $("#tabPreview .circle").click(function(){
         $(this).addClass("on").siblings().removeClass("on");
         var imgindex = $(this).index();
         $("#case > div").eq(imgindex).stop(true).fadeIn(500).siblings().fadeOut(200);
     });
-});
 
-// sec03 background 스크롤
-$(function(){
+    // sec02 rec03 slide
+    var swiper = new Swiper(".autoplay", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            640: {
+                pagination: {
+                    el: "",
+                    clickable: true,
+                  },
+            }
+          },
+    });
+
+    // sec04 background scroll
     $(window).scroll(function(){
         if ($(this).scrollTop() > $(".more").offset().top) {
             $(".sec04").css({
@@ -102,10 +85,7 @@ $(function(){
         }
     });
 
-});
-
-// sec04 product features next arrow
-$(function(){
+    // sec04 product features next arrow
     var totalNum = $("#pBox > div").length -1;
     var currentNum = 0;
 
@@ -120,12 +100,17 @@ $(function(){
 
         $("#cfunction > div").eq(currentNum).addClass("on").siblings().removeClass("on");
     });
-});
 
+    // our mission scroll
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 800) {
+            $("div.top").fadeIn(1800);
+        } else {
+            $("div.top").fadeOut(1000);
+        }    
+    });
 
-
-// footer li slidToggle
-$(function(){
+    // footer li slidToggle
     if ($(window).width() < 641) {
         $("ul.hide_ul > li h4").click(function(){
             $(this).next("ul").stop().slideToggle(350, "linear")
@@ -133,3 +118,4 @@ $(function(){
         });
     }
 });
+

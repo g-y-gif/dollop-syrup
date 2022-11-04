@@ -15,13 +15,14 @@
     list-style: none;
     font-family: 'Noto Sans KR', sans-serif;
     word-break: keep-all;
-    /* outline: 1px solid skyblue; */
 }
 a:link,
 a:visited {
     text-decoration: none;
     color: #000;
 }
+
+/* header */
 header {
     width: 100%;
     height: 70px;
@@ -285,6 +286,8 @@ ul.nw li a span {
     border: 3px solid #fff;
     border-radius: 50%;
 }
+
+
 .circle.on::before {
     content: "";
     z-index: -1;
@@ -300,12 +303,6 @@ ul.nw li a span {
     transition: opacity 0.3s;
     border-radius: inherit;
 }
-
-/* 
-* Prevents issues when the parent creates a 
-* stacking context. (For example, using the transform
-* property )
-*/
 .circle.on::after {
     content: "";
     z-index: -1;
@@ -317,7 +314,8 @@ ul.nw li a span {
     background: inherit;
     border-radius: inherit;
 }
-        
+     
+
 .c00 {
     background: url(/dollop-syrup/c/images/circle00.png) 50% 50% no-repeat; 
 }
@@ -376,17 +374,7 @@ ul.nw li a span {
     top: 187px;
     right: 7px;
 }
-/* .txtBox::after {
-    content: "";
-    width: 1920px;
-    height: 1024px;
-    display: block;
-    position: absolute;
-    right: -235px;
-    top: -187px;
-    background: url(/dollop-syrup/c/images/background.svg) no-repeat top center / contain;
-    z-index: -1;
-} */
+
 .sec03 .txtBox h3 {
     font-size: 36px;
     font-weight: 700;
@@ -567,7 +555,7 @@ ul.nw li a span {
 }
 
 
-/* sub_button */
+/* our mission */
 .top {
     width: 210px;
     height: 210px;
@@ -627,7 +615,7 @@ ul.nw li a span {
 }
 
 
-
+/* footer */
 footer {
     background: #000;
     color: #fff;

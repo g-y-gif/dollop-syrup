@@ -4,16 +4,15 @@ AOS.init();
 
 // 메뉴 클릭 메서드
 $(function(){
+    // menu click
     $("header div.menu").click(function(){
         $("#side_nav").addClass("is-open")
     });
     $(".menuclose > img").click(function(){
         $("#side_nav").removeClass("is-open")
     });
-});
 
-// 메뉴 > ul
-$(function(){
+    // menu > ul
     $("div.side_inner li > a.nav_model").click(function(){
         $(this).text(function(e, text) {
             return text === '기종' ? 'Model' : '기종'
@@ -47,11 +46,8 @@ $(function(){
         });
         $("ul.nav_trending").slideToggle(350, "linear");
     });
-});
 
-
-// sec03 contentBox02 steps
-$(function(){
+    // sec03 contentBox02 steps
     if ($(window).width() > 640) {
         $(".contentBox02 .steps > div").hover(function(){
             $(this).toggleClass("on");
@@ -60,17 +56,13 @@ $(function(){
             $(".contentBox02 .stepsTxt > div").eq(stepindex).stop(true).fadeIn(300).siblings().fadeOut(200);
         });
     }
-});
 
-
-
-
-// footer li slidToggle
-$(function(){
+    // footer li slidToggle
     if ($(window).width() < 641) {
         $("ul.hide_ul > li h4").click(function(){
             $(this).next("ul").stop().slideToggle(350, "linear")
             $(this).parent().siblings().children("ul").slidUp();
         });
     }
+
 });
